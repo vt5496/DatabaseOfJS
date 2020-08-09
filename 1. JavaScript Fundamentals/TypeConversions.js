@@ -14,23 +14,26 @@ String conversion`)
 //can use alert and alert(String(f))
 t(b, String(b), c, String(c))
 t(d, String(d), e, String(e), g, String(g))
-t(a + b)
-
-
+t(a + b) //'string13'
+t("4px" - 2) //NaN
 
 //Numeric conversion
 
 t(`
 Numeric conversion`)
-t('13' / '13')
-t(null + b)
-t(undefined + b)
-t(+'23')
+t('13' / '13') //1
+t(null + b) //13
+t(undefined + b) //NaN, bcs undefined is NaN
+t(+'23') //23
 //Number(f) Symbol can't
 t(Number('   13  '), a, Number(a), b, Number(b))
 t(c, Number(c), d, Number(d), e, Number(e))
+t(7/0) //infinity
 
 //Boolean conversion
+
+//null, undefined, '', 0, NaN – false
+//other – true
 
 t(`
 Boolean conversion`)
