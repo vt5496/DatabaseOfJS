@@ -11,7 +11,7 @@ let start = 0;
 //let waiter = setInterval(() => console.log(new Date().toLocaleString('ru', options)), 1000);
 let secondomer = setInterval(() => console.log(`   🕐 Time: ${++start}s`), 1000)
 //промис останавливается на первом вызове колбека resole or reject
-let promise = new Promise((resolve) => {
+let promise = new Promise(resolve => {
     console.log('🎉 Start. Will done 3 instructions after 6s')
     console.log(`   🕐️ Time: ${start}s`)
     setTimeout(() => resolve(console.log('First done ✅')), 2001)
@@ -19,11 +19,11 @@ let promise = new Promise((resolve) => {
 
     //у then можно передать две функции, первая запускается при успешном
     //завершении промиса, вторая при reject .then((result)=>{},(error)=>{}
-    .then(() => new Promise((resolve) => {
+    .then(() => new Promise(resolve => {
         setTimeout(() => resolve(console.log('Second done ✅')), 2000)
     }))
 
-    .then(() => new Promise((resolve) =>{
+    .then(() => new Promise(resolve =>{
         setTimeout(() => resolve(console.log('Third done ✅')), 2000)
     }))
 

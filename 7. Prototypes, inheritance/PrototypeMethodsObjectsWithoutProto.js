@@ -16,7 +16,7 @@ let user = new Object({
 //создает объект и первый аргумент это прототип
 let Anna = Object.create(person, {
     name: {
-        value: 'Anna',
+        value: 'Anna', //если явно не указать флаги. то они все будут false
         writable: false, //запрещает изменять значение свойства
         enumerable:  false, //запрещает перечислять это свойство
         configurable: true
