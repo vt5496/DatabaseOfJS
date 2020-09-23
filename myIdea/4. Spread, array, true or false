@@ -1,0 +1,4 @@
+let totalStars = 20, selectStars = 9;
+
+let arrSelectStars = [...Array(totalStars)].map((item, i) => selectStars > i)
+console.log(arrSelectStars)

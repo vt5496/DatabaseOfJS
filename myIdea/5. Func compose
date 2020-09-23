@@ -1,0 +1,14 @@
+let add1, doubleIt, squadIt;
+
+add1 = numb => ++numb;
+doubleIt = numb => numb*2;
+squadIt = numb => numb ** 2;
+
+let compose;
+
+compose = (...func) =>
+    (arg) => func.reduce((composed,func) => func(composed), arg)
+
+let composition = compose(add1, doubleIt, squadIt);
+
+console.log(composition(5))
