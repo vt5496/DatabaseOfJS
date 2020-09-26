@@ -13,7 +13,6 @@ const reverseArr = arr => {
     return recourse()
 }
 
-console.log(reverseArr([1, 2, 3, 4, 5]))
 
 const reverseArrayInPlace = arr => {
     let index = arr.length - 1;
@@ -33,6 +32,10 @@ const reverseArrayInPlace = arr => {
     }
     return recourse()
 }
-let arr = [0, 1, 2, 3, 4, 5]
-reverseArrayInPlace(arr)
-console.log(arr)
+
+console.log(reverseArr(["A", "B", "C"]));
+// → ["C", "B", "A"];
+let arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]

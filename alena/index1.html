@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alena1</title>
+    <style>
+        .newDishs {
+            width: 300px; /*ширина*/
+            height: 100px; /*высота*/
+            border: 3px solid #bf90ff; /*рамка: ширинаРамки видРамки цветРамки*/
+            border-radius: 16px; /*округление рамки*/
+            background-color: #8da7ff; /*цвет заднего фона*/
+            display: flex; /*разрешает сделать по центру*/
+            flex-direction: row; /*разрешает сделать по центру*/
+            justify-content: center; /*центр по ширине*/
+            align-items: center; /*центр по высоте*/
+            font-size: 35px; /*размер шрифта*/
+            font-weight: 900; /*жирность шрифта*/
+            font-family: sans-serif; /*семья шрифта*/
+            color: #1c2b30; /*цвет шрифта*/
+        }
+        .newDishs:hover { /*меняет когда наводим мышкой*/
+            background-color: #7587cd;
+            cursor: pointer; /* мышку меняет на пальчик*/
+        }
+
+        .newDishs:active { /*меняет когда нажимаем мышкой*/
+            background-color: #300ec6;
+        }
+
+        .sales {
+            width: 300px;
+            height: 300px;
+            border: 35px solid #fffe13;
+            border-radius: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 67px;
+            font-weight: 900;
+            font-family: sans-serif;
+            color: #c12bc6;
+        }
+        .sales:hover {
+            color: #bf90ff;
+            cursor: pointer;
+        }
+        .sales:active{
+            background-color: #5812c6;
+        }
+    </style>
+</head>
+<body>
+<div class="newDishs">
+    New Dishs
+</div>
+<div class="sales">
+    Sales
+</div>
+</body>
+</html>
