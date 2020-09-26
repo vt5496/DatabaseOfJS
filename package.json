@@ -1,0 +1,26 @@
+{
+  "requires": true,
+  "type": "module",
+  "lockfileVersion": 1,
+  "dependencies": {
+    "import": "0.0.6",
+    "node-fetch": {
+      "integrity": "sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==",
+      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.0.tgz",
+      "version": "2.6.0"
+    },
+    "optimist": {
+      "integrity": "sha1-yQlBrVnkJzMokjB00s8ufLxuwNk=",
+      "requires": {
+        "wordwrap": "~0.0.2"
+      },
+      "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz",
+      "version": "0.3.7"
+    },
+    "wordwrap": {
+      "integrity": "sha1-o9XabNXAvAAI03I0u68b7WMFkQc=",
+      "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz",
+      "version": "0.0.3"
+    }
+  }
+}
