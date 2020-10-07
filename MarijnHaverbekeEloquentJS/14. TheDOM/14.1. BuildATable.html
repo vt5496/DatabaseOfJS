@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14.1</title>
+</head>
+<body>
+<div style="text-align: center; width: 1000px; height: 1000px">
+    <img id="cat" src="cat.jpg" style=" height: 200px; position: absolute;"/>
+    <img id="hat" src="hat.png"  style="width: 50px; position: absolute"/>
+</div>
+<script>
+    let angle1 = Math.PI / 2;
+    function animateCat(time, lastTime) {
+        if (lastTime != null) {
+            angle1 += (time - lastTime) * 0.001;
+        }
+        cat.style.top = (Math.sin(angle1) * 20 + 100) + "px";
+        cat.style.left = (Math.cos(angle1) * 200 + 250) + "px";
+        requestAnimationFrame(newTime => animateCat(newTime, time))
+    }
+    requestAnimationFrame(animateCat)
+
+    let angle2 = Math.PI / 2;
+    function animateHat(time, lastTime) {
+        if (lastTime != null) {
+            angle2 += (time - lastTime) * 0.05;
+        }
+        hat.style.top = (Math.sin(angle2) * 10 + 100) + "px";
+        hat.style.left = (Math.cos(angle2) * 10 + 75) + "px"
+        requestAnimationFrame(newTime => animateHat(newTime, time))
+    }
+    requestAnimationFrame(animateHat)
+</script>
+</body>
+</html>

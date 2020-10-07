@@ -1,4 +1,4 @@
-import {SCRIPTS} from "./arrFonts.js";
+import {SCRIPTS} from "../arrFonts.js";
 
 const words = '英国的狗说"woof", 俄罗斯的狗说"тяв"'
 
